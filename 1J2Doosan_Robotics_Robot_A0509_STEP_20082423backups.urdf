@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups">
+  <link
+    name="base_0">
+    <inertial>
+      <origin
+        xyz="-1E-07 -0.001096 0.058957"
+        rpy="0 0 0" />
+      <mass
+        value="2.198" />
+      <inertia
+        ixx="0.010511"
+        ixy="0.049786"
+        ixz="0.071839"
+        iyy="0.012033"
+        iyz="-2.352E-05"
+        izz="0.012481" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/base_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/base_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.124 0"
+      rpy="1.571 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="50"
+      velocity="6.2832" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-6.9E-06 0.024423 -0.007375"
+        rpy="0 0 0" />
+      <mass
+        value="3.715" />
+      <inertia
+        ixx="0.01899"
+        ixy="7.8574E-07"
+        ixz="1.865E-05"
+        iyy="0.013731"
+        iyz="-0.00072828"
+        izz="0.01686" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1555"
+      rpy="0 0 0" />
+    <parent
+      link="base_0" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="194"
+      velocity="3.1416" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.20449 -1.2E-22 0.13271"
+        rpy="0 0 0" />
+      <mass
+        value="6.837" />
+      <inertia
+        ixx="0.019399"
+        ixy="0.00010317"
+        ixz="4.2985E-06"
+        iyy="0.2567"
+        iyz="5.16E-07"
+        izz="0.25442" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0.2 0 0.1525"
+        rpy="0 -1.571 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -1.571 -1.571" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="194"
+      velocity="3.1416" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="7.1E-06 -0.005123 0.03309"
+        rpy="0 0 0" />
+      <mass
+        value="2.769" />
+      <inertia
+        ixx="0.012526"
+        ixy="-7.4601E-06"
+        ixz="1.4842E-05"
+        iyy="0.013868"
+        iyz="-0.00047287"
+        izz="0.0088186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.409 0 0"
+      rpy="0 0 1.571" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.7925"
+      upper="2.7925"
+      effort="163"
+      velocity="3.1416" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-8.6E-06 0.086348 -0.086031"
+        rpy="0 0 0" />
+      <mass
+        value="2.679" />
+      <inertia
+        ixx="0.056068"
+        ixy="2.21E-06"
+        ixz="1.452E-06"
+        iyy="0.047122"
+        iyz="-0.014997"
+        izz="0.013329" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0.05 -0.2"
+        rpy="-0.55 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 -0.367 0"
+      rpy="1.571 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="50"
+      velocity="6.2832" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="9.1E-06 -0.006457 0.015434"
+        rpy="0 0 0" />
+      <mass
+        value="2.051" />
+      <inertia
+        ixx="0.0090788"
+        ixy="-5.3997E-06"
+        ixz="8.3955E-06"
+        iyy="0.0084721"
+        iyz="-0.0001816"
+        izz="0.010453" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.57 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.571 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="50"
+      velocity="6.2832" />
+    <dynamics
+      friction="0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-2.2E-05 -7E-07 -0.05176"
+        rpy="0 0 0" />
+      <mass
+        value="0.733" />
+      <inertia
+        ixx="0.0087483"
+        ixy="7.9428E-06"
+        ixz="1.7034E-06"
+        iyy="0.0078566"
+        iyz="9.68E-07"
+        izz="0.0044452" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://1J2Doosan_Robotics_Robot_A0509_STEP_20082423backups/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.124 0"
+      rpy="1.571 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="50"
+      velocity="6.2832" />
+    <dynamics
+      friction="0" />
+  </joint>
+</robot>
